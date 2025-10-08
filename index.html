@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Ivy Dias Godinho | Advocacia e Consultoria Jurídica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="public\images\png_redondo_02.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/2a5360fd94ace5b46fb512ee4d73eacf?family=reailge" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#eabab7',
+                        secondary: '#595150',
+                        tertiary: '#9b8281',
+                        quaternary: '#A35955',
+                        quinary: '#c6bfbe',
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        reailge: ['Reailge', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-secondary text-white font-montserrat">
+    <!-- Navbar -->
+    <header class="w-full bg-secondary backdrop-blur-sm fixed top-0 z-30 border-b border-secondary/20">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <a href="#" class="hover:text-white transition"><img width="60" src="public/images/icon_branco.png"
+                    alt="icon"></a>
+            <nav class="hidden md:flex space-x-6 font-light text-lg">
+                <a href="#sobre" class="hover:text-white/80 transition">Sobre</a>
+                <a href="#areas" class="hover:text-white/80 transition">Áreas</a>
+                <a href="#contato" class="hover:text-white/80 transition">Contato</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none transition">
+                <span id="menu-icon">☰</span>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <nav id="mobile-menu"
+            class="absolute top-full left-0 w-full md:hidden origin-top transform scale-y-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out bg-tertiary shadow-lg flex flex-col">
+            <a href="#sobre" class="py-2 px-6">Sobre</a>
+            <a href="#areas" class="py-2 px-6">Áreas</a>
+            <a href="#contato" class="py-2 px-6">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="flex flex-col justify-center items-center text-center px-6 pt-24 pb-10">
+        <img style="height: 400px;" src="public\images\logo_letreiro_branca.png" alt="logo_letreiro">
+        <div class="w-20 border-b-2 border-secondary mb-6"></div>
+        <p class="max-w-2xl text-lg leading-relaxed">
+            Atuação ética, sensível e comprometida na defesa dos seus direitos.
+        </p>
+        <div class="mt-4">
+            <a class="bg-tertiary rounded text-black py-2 px-6 hover:bg-tertiary/80 hover:text-black/80"
+                href="https://wa.me/5511973954413" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Agende sua consulta!
+            </a>
+            <p class="py-1 text-xs leading-relaxed">
+                Atendimento online e presencial.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="bg-tertiary mx-auto py-20 px-6 text-black/90">
+        <h3 class="font-reailge text-5xl mb-6 text-center">Sobre</h3>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10 max-w-5xl mx-auto">
+            <!-- Foto da advogada -->
+            <div class="flex-shrink-0">
+                <img src="public/images/1712947797199.jpg" alt="Foto da Mariana Ivy Dias Godinho"
+                    class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-full shadow-lg border-4 border-secondary" />
+            </div>
+
+            <!-- Texto de apresentação -->
+            <div class="max-w-2xl text-center md:text-left">
+                <p class="leading-relaxed text-base md:text-lg">
+                    A <strong>Mariana Ivy Dias Godinho</strong> atua com dedicação e excelência nas áreas de
+                    <strong>Direito de Família, Sucessões, Contratos, Imobiliário, Consumidor e Responsabilidade
+                        Civil</strong>.
+                    Seu compromisso é oferecer uma <strong>advocacia humanizada, estratégica e eficiente</strong>,
+                    sempre com foco
+                    na solução jurídica mais adequada para cada cliente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="areas" class="bg-white py-20 px-6 text-secondary">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10 text-center">
+                <h3 class="font-reailge text-5xl">Áreas de Atuação</h3>
+                <p>Atendimento especializado e personalizado para cada necessidade jurídica</p>
+            </div>
+
+            <!-- Cada bloco de área -->
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Direito de Família -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">family_restroom</span>
+                            <h4 class="font-reailge text-4xl">Direito de Família</h4>
+                        </div>
+                        <p class="text-sm">Orientação sensível e especializada em questões familiares</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Divórcio – extrajudicial, judicial consensual e judicial litigioso;</li>
+                        <li>União estável – reconhecimento, dissolução e partilha de bens;</li>
+                        <li>Reconhecimento e investigação de paternidade;</li>
+                        <li>Negatória de paternidade;</li>
+                        <li>Guarda de filhos e regulamentação de visitas;</li>
+                        <li>Pensão alimentícia – fixação, revisão, exoneração e execução;</li>
+                        <li>Alienação parental;</li>
+                        <li>Interdição e curatela;</li>
+                        <li>Ação de destituição do poder familiar;</li>
+                        <li>Ação de tutela (nomeação de tutor para menores);</li>
+                        <li>Ação de suprimento judicial de consentimento;</li>
+                        <li>Ação de alteração de regime de bens.</li>
+                    </ul>
+                </div>
+
+                <!-- Direito Sucessório -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">gavel</span>
+                            <h4 class="font-reailge text-4xl">Direito Sucessório</h4>
+                        </div>
+                        <p class="text-sm">Assessoria completa em heranças e planejamento sucessório</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Inventário e partilha de bens – judicial e extrajudicial;</li>
+                        <li>Sobrepartilha (bens descobertos após o encerramento do inventário);</li>
+                        <li>Doação e revogação de doação;</li>
+                        <li>Testamento – elaboração, registro, abertura e cumprimento;</li>
+                        <li>Anulação de testamento;</li>
+                        <li>Planejamento sucessório;</li>
+                        <li>Arrolamento de bens;</li>
+                        <li>Ação de petição de herança (quando um herdeiro é preterido).</li>
+                    </ul>
+                </div>
+
+                <!-- Direito Contratual -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">description</span>
+                            <h4 class="font-reailge text-4xl">Direito Contratual</h4>
+                        </div>
+                        <p class="text-sm">Consultoria e gestão de contratos civis e empresariais</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Assessoria contratual (preventiva e consultiva);</li>
+                        <li>Elaboração e revisão de contratos civis e empresariais;</li>
+                        <li>Ação de cobrança;</li>
+                        <li>Ação de execução de título extrajudicial;</li>
+                        <li>Ação de consignação em pagamento;</li>
+                        <li>Ação revisional de contrato;</li>
+                        <li>Ação de rescisão contratual com restituição de valores;</li>
+                        <li>Ação de indenização por inadimplemento contratual;</li>
+                        <li>Ação de obrigação de fazer ou não fazer;</li>
+                        <li>Ação declaratória de inexistência ou nulidade contratual;</li>
+                        <li>Embargos.</li>
+                    </ul>
+                </div>
+
+                <!-- Direito Imobiliário -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <h4 class="font-reailge text-4xl">Direito Imobiliário</h4>
+                        </div>
+                        <p class="text-sm">Atuação em disputas, contratos e regularização de imóveis</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Ação de despejo;</li>
+                        <li>Ação de reintegração, manutenção ou imissão na posse;</li>
+                        <li>Ação de usucapião – judicial e extrajudicial;</li>
+                        <li>Ação de retificação de registro imobiliário;</li>
+                        <li>Ação revisional de aluguel;</li>
+                        <li>Rescisão de contrato de compra e venda de imóvel;</li>
+                        <li>Cobrança de aluguéis e encargos locatícios;</li>
+                        <li>Ação de nunciação de obra nova;</li>
+                        <li>Ação de demarcação ou divisão de terras;</li>
+                        <li>Regularização de imóveis e assessoria para registro.</li>
+                    </ul>
+                </div>
+
+                <!-- Direito do Consumidor -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                            <h4 class="font-reailge text-4xl">Direito do Consumidor</h4>
+                        </div>
+                        <p class="text-sm">Defesa dos direitos dos consumidores e resolução de conflitos</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Ação de indenização por danos morais e materiais;</li>
+                        <li>Ação de obrigação de fazer (conserto, substituição ou devolução);</li>
+                        <li>Ação de cancelamento contratual com restituição de valores pagos;</li>
+                        <li>Ação de revisão de cláusulas abusivas;</li>
+                        <li>Ação declaratória de inexistência de débito;</li>
+                        <li>Ação de exclusão de nome dos cadastros de inadimplentes (SPC/Serasa);</li>
+                        <li>Ação de restituição de valores indevidamente cobrados;</li>
+                        <li>Ação por negativação indevida;</li>
+                        <li>Ação contra instituições financeiras e operadoras de serviços.</li>
+                    </ul>
+                </div>
+
+                <!-- Responsabilidade Civil -->
+                <div class="rounded-lg border-2 border-secondary/90">
+                    <div class="p-6 mb-4 border-b border-secondary pb-1 bg-secondary text-white">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined">balance</span>
+                            <h4 class="font-reailge text-4xl">Responsabilidade Civil</h4>
+                        </div>
+                        <p class="text-sm">Defesa e busca de indenizações por danos materiais, morais e estéticos</p>
+                    </div>
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                        <li>Ação de indenização por danos morais, materiais e estéticos;</li>
+                        <li>Ação por erro médico ou odontológico;</li>
+                        <li>Ação de indenização por acidente de trânsito;</li>
+                        <li>Ação por ofensas à honra, imagem ou reputação;</li>
+                        <li>Ação por inscrição indevida em cadastros restritivos;</li>
+                        <li>Ação regressiva;</li>
+                        <li>Ação de indenização por vício de produto ou serviço;</li>
+                        <li>Ação de reparação de danos decorrentes de atos ilícitos em geral.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <a class="bg-secondary rounded text-white py-2 px-6 hover:bg-secondary/80 hover:text-white/80"
+                    href="https://wa.me/5511973954413" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Agende sua consulta!
+                </a>
+                <p class="py-1 text-xs leading-relaxed">
+                    Atendimento online e presencial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-tertiary text-black/90 mx-auto py-16 px-6 text-center">
+        <h3 class="font-reailge text-5xl mb-8">Contato</h3>
+        <p class="mb-10">Entre em contato pelos canais abaixo:</p>
+
+        <!-- Ícones de contato -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-lg mb-12">
+            <a href="https://wa.me/5511973954413" target="_blank"
+                class="flex items-center space-x-3 hover:text-black/70 transition">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>(11) 97395-4413</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/marianaivy/" target="_blank"
+                class="flex items-center space-x-3 hover:text-black/70 transition">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>marianaivy</span>
+            </a>
+
+            <a href="https://www.instagram.com/adv.marianaivy/" target="_blank"
+                class="flex items-center space-x-3 hover:text-black/70 transition">
+                <i class="fa-brands fa-instagram"></i>
+                <span>adv.marianaivy</span>
+            </a>
+
+            <a href="mailto:adv.marianaivy@outlook.com" target="_blank"
+                class="flex items-center space-x-3 hover:text-black/70 transition">
+                <i class="fa-solid fa-envelope"></i>
+                <span>adv.marianaivy@outlook.com</span>
+            </a>
+        </div>
+
+        <!-- Formulário de mensagem via WhatsApp -->
+        <div class="max-w-md mx-auto bg-quinary rounded-lg shadow-md p-8 border border-secondary/30">
+            <h4 class="font-reailge text-4xl mb-6">Envie sua mensagem</h4>
+
+            <form id="whatsappForm" class="space-y-4">
+                <input type="text" id="nome" placeholder="Seu nome"
+                    class="w-full border border-secondary/50 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary/50"
+                    required />
+
+                <textarea id="mensagem" rows="4" placeholder="Sua mensagem"
+                    class="w-full border border-secondary/50 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-secondary/50"
+                    required></textarea>
+
+                <button type="submit"
+                    class="w-full bg-secondary text-white font-semibold py-2 rounded-md hover:bg-secondary/80 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Agende sua consulta!
+                </button>
+                <p class="py-1 text-xs leading-relaxed">
+                    Atendimento online e presencial.
+                </p>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-secondary text-white text-center p-2">
+        <p class="text-sm">&copy; 2025 Mariana Ivy Dias Godinho - Todos os direitos reservados</p>
+        <p class="text-xs">
+            Desenvolvido por: <strong><a href="https://www.linkedin.com/in/leonardo-macedo-830a08195/" target="_blank">Leonardo Macedo</a></strong>
+        </p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isOpen = false;
+
+        function openMenu() {
+            mobileMenu.classList.remove('scale-y-0', 'opacity-0', 'pointer-events-none');
+            mobileMenu.classList.add('scale-y-100', 'opacity-100', 'pointer-events-auto');
+            menuIcon.textContent = '✕';
+            menuBtn.setAttribute('aria-expanded', 'true');
+            isOpen = true;
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('scale-y-0', 'opacity-0', 'pointer-events-none');
+            mobileMenu.classList.remove('scale-y-100', 'opacity-100', 'pointer-events-auto');
+            menuIcon.textContent = '☰';
+            menuBtn.setAttribute('aria-expanded', 'false');
+            isOpen = false;
+        }
+
+        menuBtn.addEventListener('click', () => {
+            isOpen ? closeMenu() : openMenu();
+        });
+
+        // Fechar ao clicar em qualquer link (e manter navegação por hash)
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // opcional: aguardar 150ms antes de fechar para ver a animação
+                // setTimeout(closeMenu, 120);
+                closeMenu();
+            });
+        });
+
+        // Fechar ao resize > md (opcional): garante que não fique aberto se usuário redimensionar
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && isOpen) closeMenu();
+        });
+
+        document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const mensagem = document.getElementById("mensagem").value.trim();
+
+            if (!nome || !mensagem) return;
+
+            const numero = "5511973954413";
+            const texto = `Olá, meu nome é ${nome}.%0A%0A${mensagem}`;
+            const url = `https://wa.me/${numero}?text=${texto}`;
+
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+
+</html>
