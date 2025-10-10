@@ -59,7 +59,13 @@
 
     <!-- Hero -->
     <section class="flex flex-col justify-center items-center text-center px-6 pt-24 pb-10">
-        <img style="height: 400px;" src="public\images\logo_letreiro_branca.png" alt="logo_letreiro">
+        <img style="max-height: 300px;" src="public\images\icon_branco.png" alt="logo_letreiro">
+        <div class="font-reailge tracking-wider my-8">
+            <h1 class="text-2xl">MARIANA IVY DIAS GODINHO</h1>
+            <div class="w-52 h-[1px] bg-white mx-auto my-1"></div>
+            <p class="text-lg">Advocacia e Consultoria Jurídica</p>
+            <p class="text-lg">OAB/SP nº 485.509</p>
+        </div>
         <div class="w-20 border-b-2 border-secondary mb-6"></div>
         <p class="max-w-2xl text-lg leading-relaxed">
             Atuação ética, sensível e comprometida na defesa dos seus direitos.
@@ -87,8 +93,9 @@
 
             <!-- Texto de apresentação -->
             <div class="max-w-2xl text-center md:text-left">
-                <p class="leading-relaxed text-base md:text-lg">
-                    A <strong>Mariana Ivy Dias Godinho</strong> atua com dedicação e excelência nas áreas de
+                <p class="leading-relaxed text-base md:text-lg text-justify">
+                    <strong>Mariana Ivy Dias Godinho</strong>, especializada em Direito Civil e Processo Civil pela Escola Paulista de Direito, 
+                    atua com dedicação e excelência nas áreas de
                     <strong>Direito de Família, Sucessões, Contratos, Imobiliário, Consumidor e Responsabilidade
                         Civil</strong>.
                     Seu compromisso é oferecer uma <strong>advocacia humanizada, estratégica e eficiente</strong>,
@@ -118,7 +125,7 @@
                         </div>
                         <p class="text-sm">Orientação sensível e especializada em questões familiares</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Divórcio – extrajudicial, judicial consensual e judicial litigioso;</li>
                         <li>União estável – reconhecimento, dissolução e partilha de bens;</li>
                         <li>Reconhecimento e investigação de paternidade;</li>
@@ -143,7 +150,7 @@
                         </div>
                         <p class="text-sm">Assessoria completa em heranças e planejamento sucessório</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Inventário e partilha de bens – judicial e extrajudicial;</li>
                         <li>Sobrepartilha (bens descobertos após o encerramento do inventário);</li>
                         <li>Doação e revogação de doação;</li>
@@ -164,7 +171,7 @@
                         </div>
                         <p class="text-sm">Consultoria e gestão de contratos civis e empresariais</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Assessoria contratual (preventiva e consultiva);</li>
                         <li>Elaboração e revisão de contratos civis e empresariais;</li>
                         <li>Ação de cobrança;</li>
@@ -188,7 +195,7 @@
                         </div>
                         <p class="text-sm">Atuação em disputas, contratos e regularização de imóveis</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Ação de despejo;</li>
                         <li>Ação de reintegração, manutenção ou imissão na posse;</li>
                         <li>Ação de usucapião – judicial e extrajudicial;</li>
@@ -211,7 +218,7 @@
                         </div>
                         <p class="text-sm">Defesa dos direitos dos consumidores e resolução de conflitos</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Ação de indenização por danos morais e materiais;</li>
                         <li>Ação de obrigação de fazer (conserto, substituição ou devolução);</li>
                         <li>Ação de cancelamento contratual com restituição de valores pagos;</li>
@@ -233,7 +240,7 @@
                         </div>
                         <p class="text-sm">Defesa e busca de indenizações por danos materiais, morais e estéticos</p>
                     </div>
-                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed">
+                    <ul class="p-6 pt-0 list-disc ml-5 text-secondary/90 leading-relaxed text-justify">
                         <li>Ação de indenização por danos morais, materiais e estéticos;</li>
                         <li>Ação por erro médico ou odontológico;</li>
                         <li>Ação de indenização por acidente de trânsito;</li>
@@ -377,6 +384,19 @@
             const url = `https://wa.me/${numero}?text=${texto}`;
 
             window.open(url, "_blank");
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const listas = document.querySelectorAll('ul');
+
+            listas.forEach(ul => {
+                const itens = Array.from(ul.querySelectorAll('li'));
+
+                itens.sort((a, b) => b.textContent.length - a.textContent.length);
+
+                ul.innerHTML = '';
+                itens.forEach(li => ul.appendChild(li));
+            });
         });
     </script>
 </body>
